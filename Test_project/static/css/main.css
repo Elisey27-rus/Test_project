@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Темно-серый фон для всей страницы */
+    color: white; /* Белый цвет текста для контраста */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Белый цвет для заголовка */
+}
+
+.create-item-link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Синий фон для ссылки */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 35px;
+    margin-left: 170px;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0;
+    left: 0;
+}
+
+.create-item-link:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.item {
+    background-color: #4a4a4a; /* Серый цвет фона для каждого item */
+    border: 1px solid #5a5a5a; /* Немного более светлый оттенок серого для границы */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Темная тень для 3D-эффекта */
+}
+
+.item p {
+    margin: 10px 0;
+}
+
+a, .item a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff; /* Синий фон для ссылок */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover, .item a:hover {
+    background-color: #0056b3;
+}
+
+.no-products {
+    text-align: center;
+}
+
+/* Дополнительные стили при необходимости */

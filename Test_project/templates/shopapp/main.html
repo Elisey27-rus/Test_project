@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>All items</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <a href="{% url 'create_item' %}" class="create-item-link">
+        Create item
+    </a>
+    <h1>Items:</h1>
+    <div class="container">
+        {% if items %}
+            {% for item in items %}
+                <div class="item">
+                    <p>Id: {{ item.id }}</p>
+                    <p>Name: {{ item.name }}</p>
+                    <p>Price: {{ item.price }}</p>
+                    <p>Description: {{ item.descriptions }}</p>
+                    <p><a href="{% url 'item_details' pk=item.pk %}">Full information</a></p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h2 class="no-products">No products yet</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

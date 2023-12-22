@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Create item</title>
+    <link rel="stylesheet" href="{% static 'css/item_form.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Creating a item</h1>
+        <form method="post" class="form-style">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">
+                Create a new item
+            </button>
+        </form>
+    </div>
+</body>
+</html>
